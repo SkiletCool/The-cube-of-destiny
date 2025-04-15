@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кубик Судьбы</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body
+    class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4"
+  >
+    <div class="text-center mb-8">
+      <h1 class="text-4xl font-bold mb-2 text-red-400">Кубик Судьбы</h1>
+      <p class="text-xl text-gray-300">
+        Решит твою судьбу: играть с модами или быть психически здоровым
+      </p>
+    </div>
+
+    <div class="relative mb-12">
+      <div id="cube" class="cube">
+        <div class="face front one">
+          <div class="dot"></div>
+        </div>
+        <div class="face back two">
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="face right three">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="face left four">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="face top five">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="face bottom six">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      id="rollBtn"
+      class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-red-500/30 mb-8"
+    >
+      <i class="fas fa-dice mr-2"></i> Подбросить кубик
+    </button>
+
+    <div
+      id="result"
+      class="hidden bg-gray-800 p-6 rounded-xl max-w-md w-full text-center border-l-4 border-red-500"
+    >
+      <h2 class="text-2xl font-bold mb-4 text-red-400">Твоя судьба:</h2>
+      <p id="resultText" class="text-xl"></p>
+      <div id="resultIcon" class="text-5xl mt-4"></div>
+    </div>
+
+    <div class="mt-12 text-gray-400 text-sm">
+      <p>Помни: кубик никогда не врёт... или всё же врёт?</p>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
